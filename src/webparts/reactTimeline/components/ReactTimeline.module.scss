@@ -4,15 +4,14 @@
   .container {
     max-width: 700px;
     margin: 0px auto;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px 0 rgba(24, 82, 148, 1), 0 25px 50px 0 rgba(24, 82, 148, 1);
   }
 
   .row {
-    @include ms-Grid-row;
-    @include ms-fontColor-white;
-    background-color: $ms-color-themeDark;
-    padding: 20px;
-  }
+    .row {
+      padding: 20px;
+      background-color: "[theme: themeDark, default: #4052ab]";
+    }
 
   .column {
     @include ms-Grid-col;
@@ -44,9 +43,9 @@
 
     // Primary Button
     min-width: 80px;
-    background-color: $ms-color-themePrimary;
-    border-color: $ms-color-themePrimary;
-    color: $ms-color-white;
+    background-color: "[theme: themePrimary, default: #00397b]";
+    border-color: "[theme: themePrimary, default: #00397b]";
+    color: "[theme: themePrimary, default: #FFFFFF]";
 
     // Basic Button
     outline: transparent;
@@ -71,4 +70,5 @@
       display: inline-block;
     }
   }
+}
 }
