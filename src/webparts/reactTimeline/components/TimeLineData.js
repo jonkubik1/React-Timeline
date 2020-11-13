@@ -1,69 +1,54 @@
 const items = [
     {
-      title: "April  2011",
-      cardTitle: "ThinkDataSolutions Founded",
-      cardSubtitle: "",
-      cardDetailedText: `ThinkDataSolutions founded by long-time BFF, Daniel Bishop and Robin Hunt. `
+      title: "The Early Years",
+      cardTitle: "Establishing the culture",
+      media: {
+        name: "test",
+        source: {
+          path: "https://x0m.7d4.myftpupload.com/wp-content/uploads/2020/02/cropped-TDS_Lightbulb-192x192.png"
+        },
+        type: "IMAGE"
+      },
+      cardDetailedText: `From the very beginning, Robins & Morton established a company culture based on a commitment to clients, a drive to exceed expectations, a desire to learn and grow, and a mutual respect among our team members. That culture would later form the basis of Building Forward.`
     },
     {
-      title: "December  2012",
-      cardTitle: "Entrepreneur Spotlight Winner",
+      title: "1980s",
+      cardTitle: "Moving to collaboration ",
       cardSubtitle: "",
-      cardDetailedText: `Hunt said the key to being a successful entrepreneur is to find really good mentors, and a good accountant, lawyer and banker.`
+      cardDetailedText: `Robins & Morton shifts its business model to a partnering approach. By consistently fostering collaboration instead of the adversarial relationships of hard-bid, low-price models, Robins & Morton created an environment of teamwork that extended beyond the company to include everyone working on a project.`
     },
     {
-      title: "March  2013",
-      cardTitle: "THINK!",
+      title: "Early 2010s",
+      cardTitle: "Bringing culture and process together",
       cardSubtitle: "",
-      cardDetailedText: `Think Data Solutions/Think Data Solutions/Think Data Solutions/`
+      cardDetailedText: `Events at two jobsites 1,600 miles apart organically set in a motion a grassroots effort within our company. One team was focused on culture, teamwork and engagement, the other concentrated on adopting Lean tools and philosophies. Both projects learned from each other, ultimately sharing those ideas with other projects. Bringing culture and process together yielded improvements in project delivery.`
     },
     {
-      title: "Mar  2014",
-      cardTitle: "ThinkData represented on TECHBIRMINGHAM'S elected board",
+      title: "Mid 2010s",
+      cardTitle: "Formalizing the movement",
       cardSubtitle: "",
-      cardDetailedText: `TechBirmingham is pleased to announce that Robin Hunt, ThinkDataSolutions SHE.E.O./Co-Founder, has been elected to the TechBirmingham board of directors.`
+      cardDetailedText: `In true collaborative fashion, a steering committee representing a wide range of experience, age, opinions and job titles identified the four tents that would guide a new continuous improvement initiative: Collaboration, Continuous Improvement, Leadership Development and Creating a Learning Culture.
+      Within a year, the movement had a name – Building Forward. 
+      Onboarding and alignment meetings at multiple locations expanded the awareness of Building Forward.
+      `
     },
     {
-      title: "December  2015",
-      cardTitle: "Lynda Learning",
+      title: "2018",
+      cardTitle: "Building momentum while staying true to Robins & Morton",
       cardSubtitle: "",
-      cardDetailedText: `ThinkData Solutions, Inc. cofounder Robin Hunt has most recently been internationally published through leading online learning company lynda.com., now part of LinkedIn. With more than 3,700 courses, lynda.com teaches business, creative and technical skills.`
+      cardDetailedText: `The first Introduction to Building Forward classes were held, supporting the move toward Lean Construction while emphasizing its integration with our company’s culture and values.`
     },
     {
-      title: "December  2016",
-      cardTitle: "[IN]structor",
+      title: "2019",
+      cardTitle: "Connecting everyone with Building Forward",
       cardSubtitle: "",
-      cardDetailedText: `ThinkData Solutions Co-Founder and CEO, Robin Hunt a LinkedIn Learning INstructor. LinkedIn Learning is a platform of on-demand instructional videos that can help you gain new skills `
+      cardDetailedText: `The inaugural Building Forward connect event in Orlando, Florida, brought together more than 600 Robins & Morton team members, clients and industry partners to share best practices, success stories and lessons learned.`
     },
     {
-      title: "September  2017",
-      cardTitle: "ThinkData Solutions",
+      title: "2020",
+      cardTitle: "Increasing advocacy and support",
       cardSubtitle: "",
-      cardDetailedText: `ThinkDataSolutions ThinkDataSolutions ThinkDataSolutions`
-    },
-    {
-      title: "March  2018",
-      cardTitle: "#InternEvent2018",
-      cardSubtitle: "",
-      cardDetailedText: `The first event we knew it was special because we saw the impact on the students. We watched them come in unsure, but leave with confidence. We knew if this was the beginning of their career - they’d take the lessons with them throughout their career. People talk about measuring ROI, how do you measure that? Learning something in a single moment that they take with them for a lifetime? I measure it internally as happiness I can’t get anywhere else.`
-    },
-    {
-      title: "January  2019",
-      cardTitle: "ThinkData+ InnovateBirmingham",
-      cardSubtitle: "",
-      cardDetailedText: `To further meet the workforce demand for technology talent in the city, InnovateBirmingham adds a new boot camp promoting Data Analytics.Robin Hunt will be leading the course for Innovate Birmingham. ThinkData Solutions, Inc., is a technology firm specializing in technical training and custom application development using SharePoint & Business Intelligence tools.`
-    },
-    {
-      title: "January  2020",
-      cardTitle: "Cohort 10",
-      cardSubtitle: "",
-      cardDetailedText: `Unknown at this point in time--- Cohort Ten goes virtual.`
-    },
-    {
-      title: "April  2021",
-      cardTitle: "Happy Birthday, ThinkDataSolutions!",
-      cardSubtitle: "",
-      cardDetailedText: `ThinkData is Turning Ten! Anti-surprise advocate, CEO, and co-founder- Daniel Bishop said he's not surprised. Robin Hunt, lovingly coined the collective experience "her third child."`
+      cardDetailedText: `The widespread involvement of team members in Building Forward Resource Groups and as Building Forward advocates increased the number of people supporting Building Forward throughout the company, further driving engagement and implementation.`
     }
   ];
   
