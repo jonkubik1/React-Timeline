@@ -3,9 +3,9 @@ const items = [
       title: "The Early Years",
       cardTitle: "Establishing the culture",
       media: {
-        name: "test",
+        name: "testPublic",
         source: {
-          path: "https://x0m.7d4.myftpupload.com/wp-content/uploads/2020/02/cropped-TDS_Lightbulb-192x192.png"
+          url: "https://homepages.cae.wisc.edu/~ece533/images/airplane.png"
         },
         type: "IMAGE"
       },
@@ -14,13 +14,25 @@ const items = [
     {
       title: "1980s",
       cardTitle: "Moving to collaboration ",
-      cardSubtitle: "",
+      media: {
+        name: "testSharePoint",
+        source: {
+          url: "https://thinkdata.sharepoint.com/sites/JonsSite/SiteAssets/TimelineImages/TDS_Logo.jpg"
+        },
+        type: "IMAGE"
+      },
       cardDetailedText: `Robins & Morton shifts its business model to a partnering approach. By consistently fostering collaboration instead of the adversarial relationships of hard-bid, low-price models, Robins & Morton created an environment of teamwork that extended beyond the company to include everyone working on a project.`
     },
     {
       title: "Early 2010s",
       cardTitle: "Bringing culture and process together",
-      cardSubtitle: "",
+      media: {
+        name: "testLocal",
+        source: {
+          url: "../src/webparts/reactTimeline/components/assets/test1.png"
+        },
+        type: "IMAGE"
+      },
       cardDetailedText: `Events at two jobsites 1,600 miles apart organically set in a motion a grassroots effort within our company. One team was focused on culture, teamwork and engagement, the other concentrated on adopting Lean tools and philosophies. Both projects learned from each other, ultimately sharing those ideas with other projects. Bringing culture and process together yielded improvements in project delivery.`
     },
     {
