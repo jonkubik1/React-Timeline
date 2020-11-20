@@ -1,3 +1,38 @@
+/*import * as React from 'react';
+import * as ReactDom from 'react-dom';
+import {
+  SPHttpClient,
+  SPHttpClientResponse
+} from '@microsoft/sp-http';
+
+export interface ISPLists {
+  value: ISPList[];
+}
+
+export interface ISPList {
+  Title: string;
+  cardTitle: string;
+  Image: string;
+  cardDetailedText: string;
+  Id: string;
+}
+
+export default class TimelineItems {
+
+  public _renderList(items: ISPList[]): void {
+    let html: string = '';
+    items.forEach((item: ISPList) => {
+      html += `
+      <div>
+        <p>${item.Title}</p><br>
+        <p>${item.cardTitle}</p><br>
+        <p>${item.Image}</p><br>
+        <p>${item.cardDetailedText}</p><br>
+      </div>`;
+    });
+  }
+}*/
+
 const items = [
     {
       title: "The Early Years",
