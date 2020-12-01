@@ -1,39 +1,36 @@
-/*import * as React from 'react';
-import * as ReactDom from 'react-dom';
-import {
-  SPHttpClient,
-  SPHttpClientResponse
-} from '@microsoft/sp-http';
+import { ISPList } from '../ReactTimelineWebPart';
 
-export interface ISPLists {
-  value: ISPList[];
-}
+export default class TimeLineData {
 
-export interface ISPList {
-  Title: string;
-  cardTitle: string;
-  Image: string;
-  cardDetailedText: string;
-  Id: string;
-}
+  public static _items: ISPList[] = [
+    {
+      Title: "The Early Years",
+      cardTitle: "Establishing the culture",
+      Image: "test",
+      cardDetailedText: `From the very beginning, Robins & Morton established a company culture based on a commitment to clients, a drive to exceed expectations, a desire to learn and grow, and a mutual respect among our team members. That culture would later form the basis of Building Forward.`
+    },
+    {
+      Title: "1980s",
+      cardTitle: "Moving to collaboration ",
+      Image: "test",
+      cardDetailedText: `Robins & Morton shifts its business model to a partnering approach. By consistently fostering collaboration instead of the adversarial relationships of hard-bid, low-price models, Robins & Morton created an environment of teamwork that extended beyond the company to include everyone working on a project.`
+    },
+    {
+      Title: "Early 2010s",
+      cardTitle: "Bringing culture and process together",
+      Image: "test",
+      cardDetailedText: `Events at two jobsites 1,600 miles apart organically set in a motion a grassroots effort within our company. One team was focused on culture, teamwork and engagement, the other concentrated on adopting Lean tools and philosophies. Both projects learned from each other, ultimately sharing those ideas with other projects. Bringing culture and process together yielded improvements in project delivery.`
+    }
+  ];
 
-export default class TimelineItems {
-
-  public _renderList(items: ISPList[]): void {
-    let html: string = '';
-    items.forEach((item: ISPList) => {
-      html += `
-      <div>
-        <p>${item.Title}</p><br>
-        <p>${item.cardTitle}</p><br>
-        <p>${item.Image}</p><br>
-        <p>${item.cardDetailedText}</p><br>
-      </div>`;
+  public static get(): Promise<ISPList[]> {
+    return new Promise<ISPList[]>((resolve) => {
+      resolve(TimeLineData._items);
     });
   }
-}*/
+}
 
-const items = [
+/*const items = [
     {
       title: "The Early Years",
       cardTitle: "Establishing the culture",
@@ -99,5 +96,4 @@ const items = [
     }
   ];
   
-  export default items;
-  
+export default items;*/

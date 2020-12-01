@@ -17,9 +17,11 @@
     "@microsoft/sp-office-ui-fabric-core": "1.11.0",
     "@microsoft/sp-property-pane": "1.11.0",
     "@microsoft/sp-webpart-base": "1.11.0",
+    "@types/jquery": "^3.5.4",
+    "jquery": "^3.5.1",
     "office-ui-fabric-react": "6.214.0",
     "react": "16.8.5",
-    "react-chrono": "^1.6.0",
+    "react-chrono": "^1.8.2",
     "react-dom": "16.8.5",
     "react-horizontal-timeline": "^1.5.3"
   },

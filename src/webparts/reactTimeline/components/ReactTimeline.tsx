@@ -3,8 +3,59 @@ import * as React from 'react';
 import styles from './ReactTimeline.module.scss';
 import { IReactTimelineProps } from './IReactTimelineProps';
 import { Chrono } from "react-chrono";
-import data from './TimeLineData';
-export default class ReactTimeline extends React.Component<IReactTimelineProps, {}> {
+import { escape } from '@microsoft/sp-lodash-subset';
+import * as jquery from 'jquery';
+
+export interface IReactGetItemsState {
+  items:[
+    {
+      "Title": "",
+      "cardTitle": "",
+      "Image": "",
+      "cardDetailedText": ""
+    }
+  ]
+}
+
+export default class ReactTimeline extends React.Component<IReactTimelineProps, IReactGetItemsState> {
+
+
+  public constructor(props: IReactTimelineProps, state: IReactGetItemsState){
+    super(props);
+    this.state = {
+      items: [
+        {
+          "Title": "",
+          "cardTitle": "",
+          "Image": "",
+          "cardDetailedText": ""
+        }
+      ]
+    };
+  }
+
+  public componentDidMount() {
+    setInterval(
+      () => this.fetchDatafromSharePointList(),
+      1000
+    );
+  }
+  
+  private fetchDatafromSharePointList(){ 
+    var reactHandler = this; 
+    jquery.ajax({ 
+        url: `${this.props.siteurl}/_api/web/lists/getbytitle('TimelineTest')/items`, 
+        type: "GET", 
+        headers:{'Accept': 'application/json; odata=verbose;'}, 
+        success: function(resultData) { 
+          reactHandler.setState({ 
+            items: resultData.d.results 
+          }); 
+        }, 
+        error : function(jqXHR, textStatus, errorThrown) { 
+        } 
+    }); 
+  } 
 
   public render(): React.ReactElement<IReactTimelineProps> {
     return (
@@ -12,7 +63,19 @@ export default class ReactTimeline extends React.Component<IReactTimelineProps, 
         <div className={ styles.container }>
           <div className={ styles.row }>
             <div className={ styles.column }>
-              <Chrono items={data} mode="HORIZONTAL" />
+              {/*<Chrono mode="HORIZONTAL">*/}
+                {this.state.items.map(function(item,key){
+                   
+                   return (
+                     <div key={key}>
+                       <p>{item.Title}</p>
+                       <p>{item.cardTitle}</p>
+                       <p>{item.Image}</p>
+                       <p>{item.cardDetailedText}</p>
+                     </div>
+                   );
+                })}
+              {/*</Chrono>*/}
             </div>
           </div>
         </div>
