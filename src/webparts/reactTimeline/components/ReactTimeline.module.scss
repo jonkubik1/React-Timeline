@@ -75,12 +75,14 @@
 
 //additional css for brand standards
 
-div[class^='css-19391er'] //horizontal line
+//horizontal line
+div[class^='css-19391er'] 
 {
   background: #E10600;
 }
 
-//div[class^='css-1a5nn4c']:active
-//{
-//  background: #003057;
-//}
+//Global font
+div[class^='workbench_ecefc8ba']
+{
+  font-family: Arial;
+}

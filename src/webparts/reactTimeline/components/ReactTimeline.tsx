@@ -3,6 +3,7 @@ import * as React from 'react';
 import styles from './ReactTimeline.module.scss';
 import { IReactTimelineProps } from './IReactTimelineProps';
 import { Chrono } from "react-chrono";
+import items from './TimeLineData';
 import { escape } from '@microsoft/sp-lodash-subset';
 import * as jquery from 'jquery';
 
@@ -14,13 +15,13 @@ export interface IReactGetItemsState {
       "Image": "",
       "cardDetailedText": ""
     }
-  ]
+  ];
 }
 
 export default class ReactTimeline extends React.Component<IReactTimelineProps, IReactGetItemsState> {
 
 
-  public constructor(props: IReactTimelineProps, state: IReactGetItemsState){
+  /*public constructor(props: IReactTimelineProps, state: IReactGetItemsState){
     super(props);
     this.state = {
       items: [
@@ -55,7 +56,7 @@ export default class ReactTimeline extends React.Component<IReactTimelineProps, 
         error : function(jqXHR, textStatus, errorThrown) { 
         } 
     }); 
-  } 
+  } */
 
   public render(): React.ReactElement<IReactTimelineProps> {
     return (
@@ -63,19 +64,7 @@ export default class ReactTimeline extends React.Component<IReactTimelineProps, 
         <div className={ styles.container }>
           <div className={ styles.row }>
             <div className={ styles.column }>
-              {/*<Chrono mode="HORIZONTAL">*/}
-                {this.state.items.map(function(item,key){
-                   
-                   return (
-                     <div key={key}>
-                       <p>{item.Title}</p>
-                       <p>{item.cardTitle}</p>
-                       <p>{item.Image}</p>
-                       <p>{item.cardDetailedText}</p>
-                     </div>
-                   );
-                })}
-              {/*</Chrono>*/}
+              <Chrono items={items} mode="HORIZONTAL" />
             </div>
           </div>
         </div>

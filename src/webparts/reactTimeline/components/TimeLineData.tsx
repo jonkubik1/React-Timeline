@@ -1,4 +1,4 @@
-import { ISPList } from '../ReactTimelineWebPart';
+/*import { ISPList } from '../ReactTimelineWebPart';
 
 export default class TimeLineData {
 
@@ -28,16 +28,16 @@ export default class TimeLineData {
       resolve(TimeLineData._items);
     });
   }
-}
+}*/
 
-/*const items = [
+const items = [
     {
       title: "The Early Years",
       cardTitle: "Establishing the culture",
       media: {
         name: "testPublic",
         source: {
-          url: "https://homepages.cae.wisc.edu/~ece533/images/airplane.png"
+          url: "https://thinkdata-my.sharepoint.com/personal/jon_thinkdatasolutions_com/Documents/TimelineImageTest/1AlignmentTile.png"
         },
         type: "IMAGE"
       },
@@ -96,4 +96,4 @@ export default class TimeLineData {
     }
   ];
   
-export default items;*/
+export default items;
