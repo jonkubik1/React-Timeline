@@ -35,9 +35,9 @@ const items = [
       title: "The Early Years",
       cardTitle: "Establishing the culture",
       media: {
-        name: "testPublic",
+        name: "Photo from page 20 of 70-year book",
         source: {
-          url: "https://thinkdata-my.sharepoint.com/personal/jon_thinkdatasolutions_com/Documents/TimelineImageTest/1AlignmentTile.png"
+          url: "https://robinsmorton-my.sharepoint.com/personal/rmcon06_robinsmorton_com/Documents/BFTimelineImages/Asset8.jpg"
         },
         type: "IMAGE"
       },
@@ -45,11 +45,11 @@ const items = [
     },
     {
       title: "1980s",
-      cardTitle: "Moving to collaboration ",
+      cardTitle: "Moving to collaboration",
       media: {
-        name: "testSharePoint",
+        name: "Suggest early HCA project",
         source: {
-          url: "https://thinkdata.sharepoint.com/sites/JonsSite/SiteAssets/TimelineImages/TDS_Logo.jpg"
+          url: "https://robinsmorton-my.sharepoint.com/personal/rmcon06_robinsmorton_com/Documents/BFTimelineImages/Asset%207.jpg"
         },
         type: "IMAGE"
       },
@@ -59,9 +59,9 @@ const items = [
       title: "Early 2010s",
       cardTitle: "Bringing culture and process together",
       media: {
-        name: "testLocal",
+        name: "MaineGeneral (1066) shot showing people",
         source: {
-          url: "../src/webparts/reactTimeline/components/assets/test1.png"
+          url: "https://robinsmorton-my.sharepoint.com/personal/rmcon06_robinsmorton_com/Documents/BFTimelineImages/photo%202.jpg"
         },
         type: "IMAGE"
       },
@@ -70,28 +70,51 @@ const items = [
     {
       title: "Mid 2010s",
       cardTitle: "Formalizing the movement",
-      cardSubtitle: "",
+      media: {
+        name: "",
+        source: {
+          url: "https://robinsmorton-my.sharepoint.com/personal/rmcon06_robinsmorton_com/Documents/BFTimelineImages/1407_N598.jpg"
+        },
+        type: "IMAGE"
+      },
       cardDetailedText: `In true collaborative fashion, a steering committee representing a wide range of experience, age, opinions and job titles identified the four tents that would guide a new continuous improvement initiative: Collaboration, Continuous Improvement, Leadership Development and Creating a Learning Culture.
       Within a year, the movement had a name – Building Forward. 
-      Onboarding and alignment meetings at multiple locations expanded the awareness of Building Forward.
-      `
+      Onboarding and alignment meetings at multiple locations expanded the awareness of Building Forward.`
     },
     {
       title: "2018",
       cardTitle: "Building momentum while staying true to Robins & Morton",
-      cardSubtitle: "",
+      media: {
+        name: "",
+        source: {
+          url: "https://robinsmorton-my.sharepoint.com/personal/rmcon06_robinsmorton_com/Documents/BFTimelineImages/1606_N106.jpg"
+        },
+        type: "IMAGE"
+      },
       cardDetailedText: `The first Introduction to Building Forward classes were held, supporting the move toward Lean Construction while emphasizing its integration with our company’s culture and values.`
     },
     {
       title: "2019",
       cardTitle: "Connecting everyone with Building Forward",
-      cardSubtitle: "",
+      media: {
+        name: "Building Forward Connect event photo showing banner",
+        source: {
+          url: "https://robinsmorton-my.sharepoint.com/personal/rmcon06_robinsmorton_com/Documents/BFTimelineImages/6A4A9398.jpg"
+        },
+        type: "IMAGE"
+      },
       cardDetailedText: `The inaugural Building Forward connect event in Orlando, Florida, brought together more than 600 Robins & Morton team members, clients and industry partners to share best practices, success stories and lessons learned.`
     },
     {
       title: "2020",
       cardTitle: "Increasing advocacy and support",
-      cardSubtitle: "",
+      media: {
+        name: "SHOT OF STAND-UP BOARD AT MBCC",
+        source: {
+          url: "https://robinsmorton-my.sharepoint.com/personal/rmcon06_robinsmorton_com/Documents/BFTimelineImages/Robins%20&%20Morton%204-15-20.jpg"
+        },
+        type: "IMAGE"
+      },
       cardDetailedText: `The widespread involvement of team members in Building Forward Resource Groups and as Building Forward advocates increased the number of people supporting Building Forward throughout the company, further driving engagement and implementation.`
     }
   ];
